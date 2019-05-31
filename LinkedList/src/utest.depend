@@ -4116,3 +4116,249 @@
 
 1532345168 /home/profesor/Descargas/linkedlist_cascara_v4/testing/inc/main_test.h
 
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/addNodeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/utest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/inc/LinkedList.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/Employee.h
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/addTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/clearTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/cloneTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/containsAllTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/containsTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/deleteLinkedListTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/Employee.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/getNodeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/getTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/indexOfTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/isEmptyTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/lenTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/main_test.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	"../inc/newTest.h"
+	"../inc/addTest.h"
+	"../inc/getNodeTest.h"
+	"../inc/addNodeTest.h"
+	"../inc/deleteLinkedListTest.h"
+	"../inc/lenTest.h"
+	"../inc/getTest.h"
+	"../inc/containsTest.h"
+	"../inc/setTest.h"
+	"../inc/removeTest.h"
+	"../inc/clearTest.h"
+	"../inc/cloneTest.h"
+	"../inc/pushTest.h"
+	"../inc/indexOfTest.h"
+	"../inc/isEmptyTest.h"
+	"../inc/popTest.h"
+	"../inc/subListTest.h"
+	"../inc/containsAllTest.h"
+	"../inc/sortTest.h"
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/newTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/addTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/getNodeTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/addNodeTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/deleteLinkedListTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/lenTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/getTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/containsTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/setTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/removeTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/clearTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/cloneTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/pushTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/indexOfTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/isEmptyTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/popTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/subListTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/containsAllTest.h
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/sortTest.h
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/newTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/popTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/pushTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/removeTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/setTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/sortTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/src/subListTest.c
+	"../../testing/utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../../inc/LinkedList.h"
+	"../../testing/inc/Employee.h"
+
+1559096340 source:/home/linux/Projects/LinkedList/LinkedList/testing/utest.c
+	"utest.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1559284030 source:/home/linux/Projects/LinkedList/LinkedList/src/LinkedList.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../inc/LinkedList.h"
+
+1559284090 source:/home/linux/Projects/LinkedList/LinkedList/src/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../testing/inc/main_test.h"
+	"../inc/LinkedList.h"
+
+1559096340 /home/linux/Projects/LinkedList/LinkedList/testing/inc/main_test.h
+

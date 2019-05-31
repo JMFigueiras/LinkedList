@@ -44,7 +44,6 @@ int ll_len(LinkedList* this){
     return returnAux;
 }
 
-
 /** \brief  Obtiene un nodo de la lista
  *
  * \param this LinkedList* Puntero a la lista
@@ -87,7 +86,6 @@ Node* test_getNode(LinkedList* this, int nodeIndex){
     return getNode(this, nodeIndex);
 }
 
-
 /** \brief Agrega y enlaza un nuevo nodo a la lista
  *
  * \param this LinkedList* Puntero a la lista
@@ -109,24 +107,19 @@ static int addNode(LinkedList* this, int nodeIndex, void* pElement){
             pNew->pElement = pElement;
 
             if(nodeIndex == 0){
-            //Si la posición para insertar el nuevo nodo es 0
 
-                //entonces el próximo nodo será el primero de la Lista.
                 pNew->pNextNode = this->pFirstNode;
-                //Y el nuevo nodo se convertirá en el primero.
                 this->pFirstNode = pNew;
                 this->size++;
                 returnAux = 0;
             }
             else{
-                //Guardo el último nodo en una auxiliar.
-                Node* aux = test_getNode(this, nodeIndex-1);
 
-                if(aux != NULL){
-                    //El próximo nodo del nuevo nodo, será el último en la lista.
-                    pNew->pNextNode = aux->pNextNode;
-                    //Asigno el nuevo nodo al final de la lista.
-                    aux->pNextNode = pNew;
+                Node* pAux = test_getNode(this, nodeIndex-1);
+
+                if(pAux != NULL){
+                    pNew->pNextNode = pAux->pNextNode;
+                    pAux->pNextNode = pNew;
                     this->size++;
                     returnAux = 0;
                 }
@@ -138,7 +131,6 @@ static int addNode(LinkedList* this, int nodeIndex, void* pElement){
 
     return returnAux;
 }
-
 
 /** \brief Permite realizar el test de la funcion addNode la cual es privada
  *
@@ -153,7 +145,6 @@ int test_addNode(LinkedList* this, int nodeIndex, void* pElement){
 
     return addNode(this, nodeIndex, pElement);
 }
-
 
 /** \brief  Agrega un elemento a la lista
  * \param pList LinkedList* Puntero a la lista
@@ -192,7 +183,6 @@ void* ll_get(LinkedList* this, int index){
     return returnAux;
 }
 
-
 /** \brief Modifica un elemento de la lista
  *
  * \param this LinkedList* Puntero a la lista
@@ -219,7 +209,6 @@ int ll_set(LinkedList* this, int index, void* pElement){
 
     return returnAux;
 }
-
 
 /** \brief Elimina un elemento de la lista
  *
@@ -258,7 +247,6 @@ int ll_remove(LinkedList* this, int index){
     return returnAux;
 }
 
-
 /** \brief Elimina todos los elementos de la lista
  *
  * \param this LinkedList* Puntero a la lista
@@ -283,7 +271,6 @@ int ll_clear(LinkedList* this){
 
     return returnAux;
 }
-
 
 /** \brief Elimina todos los elementos de la lista y la lista
  *
@@ -318,9 +305,9 @@ int ll_indexOf(LinkedList* this, void* pElement){
     if(this != NULL){
 
         for(int i = 0; i < ll_len(this); i++){
-            Node* aux = getNode(this, i);
+            Node* pAux = getNode(this, i);
 
-            if(aux != NULL && aux->pElement == pElement){
+            if(pAux != NULL && pAux->pElement == pElement){
                 returnAux = i;
                 break;
             }
@@ -374,7 +361,6 @@ int ll_push(LinkedList* this, int index, void* pElement){
     return returnAux;
 }
 
-
 /** \brief Elimina el elemento de la posicion indicada y retorna su puntero
  *
  * \param this LinkedList* Puntero a la lista
@@ -394,7 +380,6 @@ void* ll_pop(LinkedList* this, int index){
 
     return returnAux;
 }
-
 
 /** \brief  Determina si la lista contiene o no el elemento pasado como parametro
  *
@@ -486,8 +471,6 @@ LinkedList* ll_subList(LinkedList* this, int from, int to){
     return cloneArray;
 }
 
-
-
 /** \brief Crea y retorna una nueva lista con los elementos de la lista pasada como parametro
  *
  * \param pList LinkedList* Puntero a la lista
@@ -503,7 +486,6 @@ LinkedList* ll_clone(LinkedList* this){
 
     return cloneArray;
 }
-
 
 /** \brief Ordena los elementos de la lista utilizando la funcion criterio recibida como parametro
  * \param pList LinkedList* Puntero a la lista

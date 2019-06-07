@@ -16,8 +16,7 @@ static int addNode(LinkedList* this, int nodeIndex, void* pElement);
  */
 LinkedList* ll_newLinkedList(void){
 
-    LinkedList* this;
-    this = (LinkedList*)malloc(sizeof(LinkedList));
+    LinkedList* this = (LinkedList*)malloc(sizeof(LinkedList));
 
     if(this != NULL){
         this->size = 0;
@@ -488,11 +487,11 @@ LinkedList* ll_clone(LinkedList* this){
 }
 
 /** \brief Ordena los elementos de la lista utilizando la funcion criterio recibida como parametro
- * \param pList LinkedList* Puntero a la lista
+ * \param this LinkedList* Puntero a la lista
  * \param pFunc (*pFunc) Puntero a la funcion criterio
  * \param order int  [1] Indica orden ascendente - [0] Indica orden descendente
  * \return int Retorna  (-1) Error: si el puntero a la listas es NULL
-                                ( 0) Si ok
+                                (0) Si ok
  */
 int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order){
 
@@ -526,4 +525,63 @@ int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order){
     }
 
     return returnAux;
+}
+
+void* ll_filter(LinkedList* this, int (*pFunc)(void*)){
+
+    LinkedList* newLinkedList = NULL;
+
+    if(this != NULL && pFunc != NULL){
+
+        newLinkedList = ll_newLinkedList();
+
+        Node* pNode = ll_startIterator(this);
+
+        if(newLinkedList != NULL){
+
+            while(pNode != NULL){
+
+                if(pFunc(pNode->pElement))
+                    ll_add(newLinkedList, pNode->pElement);
+
+                pNode = ll_getNextIterator(this);
+            }
+        }
+
+    }
+
+    return newLinkedList;
+}
+
+Node* ll_startIterator(LinkedList* this){
+
+    this->nodeIterator = NULL;
+
+    if(this != NULL){
+        this->nodeIterator = this->pFirstNode;
+    }
+
+    return this->nodeIterator;
+}
+
+Node* ll_getNextIterator(LinkedList* this){
+
+    if(this != NULL && this->nodeIterator != NULL){
+        this->nodeIterator = (this->nodeIterator)->pNextNode;
+    }
+
+    return this->nodeIterator;
+}
+
+void ll_map(LinkedList* this, void (*pFunc)(void*)){
+
+    if(this != NULL && pFunc != NULL){
+
+        Node* pNode = ll_startIterator(this);
+
+        while(pNode != NULL){
+            pFunc(pNode->pElement);
+            pNode = ll_getNextIterator(this);
+        }
+    }
 }
